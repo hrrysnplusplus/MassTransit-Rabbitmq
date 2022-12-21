@@ -1,18 +1,17 @@
-# Mass Transit + Rabbitmq - by hrrysn++
+# Mass Transit + Rabbitmq = Microservice
 
 ## Setup
 - Build and run on docker compose
 
 ## Ports
-- Rabbitmq management portal (user: guest, pw: guest) - localhost:15672
+- Rabbitmq management portal - localhost:15672 - (user: guest, pw: guest) 
 - Alarm Service - localhost:50000
 
-
-<pre>
-
+## Mass Transit
 I love Mass Transit because it abstracts complex boilerplate rabbitmq/.net code 
 into teeny tiny elagant readable code.
 
+## Rabbitmq
 Rabbitmq allows services/databases to communicate with one another.
 It gives messages a safe place to hide until it is received.
 
