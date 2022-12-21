@@ -2,7 +2,7 @@
 
 namespace Contracts
 {
-    public class AlarmTriggeredEvent
+    public record AlarmTriggeredEvent
     {
         public int AlarmId { get; set; }
         public DateTime? AlarmEventDateTime { get; set; }
