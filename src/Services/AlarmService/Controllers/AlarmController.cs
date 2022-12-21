@@ -12,13 +12,13 @@ public class AlarmController : ControllerBase
 {
     readonly IPublishEndpoint _publishEndpoint;
     readonly ILogger<AlarmController> _logger;
-    readonly DateTimeService _dateTimeService;
+    readonly IDateTime _dateTime;
 
-    public AlarmController(IPublishEndpoint publishEndpoint, ILogger<AlarmController> logger, DateTimeService dateTimeService)
+    public AlarmController(IPublishEndpoint publishEndpoint, ILogger<AlarmController> logger, IDateTime dateTime)
     {
         _publishEndpoint = publishEndpoint;
         _logger = logger;
-        _dateTimeService = dateTimeService;   
+        _dateTime = dateTime;   
     }
 
     [HttpPost]
@@ -30,12 +30,12 @@ public class AlarmController : ControllerBase
         await _publishEndpoint.Publish<AlarmTriggeredEvent>(new()
         {
             AlarmId = context.AlarmId,
-            AlarmEventDateTime = _dateTimeService.Now,
+            AlarmEventDateTime = _dateTime.Now,
             HomeOwnerId = context.HomeOwnerId,
             Address = context.Address,
         });
 
-        _logger.LogInformation("Alarm Triggered on {Now} and has been sent to rabbitmq", _dateTimeService.Now);
+        _logger.LogInformation("Alarm Triggered on {Now} and has been sent to rabbitmq", _dateTime.Now);
 
         return Ok();
 
