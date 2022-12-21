@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33020.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmService", "src\Services\AlarmService\AlarmService.csproj", "{42DC021D-19B6-4AE3-9875-DFF46161B01D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlarmService", "src\Services\AlarmService\AlarmService.csproj", "{42DC021D-19B6-4AE3-9875-DFF46161B01D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeOwnerService", "src\Services\HomeOwnerService\HomeOwnerService.csproj", "{3590E4A6-4850-4B1F-8CC1-8D89D43E438E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeOwnerService", "src\Services\HomeOwnerService\HomeOwnerService.csproj", "{3590E4A6-4850-4B1F-8CC1-8D89D43E438E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{37242C69-30D5-49CC-8A48-73B37B99B0C0}"
 EndProject
@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{E27DA5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{79D9904F-FACB-48D6-A8C2-7A00267EF9C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Shared\Contracts\Contracts.csproj", "{FFAEA5FB-B6EA-4D34-8025-0F563A932F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\Shared\Contracts\Contracts.csproj", "{FFAEA5FB-B6EA-4D34-8025-0F563A932F1E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EEBA37BC-921E-4CA3-978D-498224B13D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FFAEA5FB-B6EA-4D34-8025-0F563A932F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFAEA5FB-B6EA-4D34-8025-0F563A932F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFAEA5FB-B6EA-4D34-8025-0F563A932F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBA37BC-921E-4CA3-978D-498224B13D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBA37BC-921E-4CA3-978D-498224B13D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBA37BC-921E-4CA3-978D-498224B13D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBA37BC-921E-4CA3-978D-498224B13D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
