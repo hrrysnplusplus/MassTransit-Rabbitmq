@@ -1,6 +1,6 @@
 ﻿namespace Contracts
 {
-    public class HomeOwnerNotificationEvent
+    public record HomeOwnerNotificationEvent
     {
         public string TransitStatus { get; set; }
 
